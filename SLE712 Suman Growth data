@@ -1,0 +1,23 @@
+t<-read.csv("https://github.com/markziemann/SLE712_files/raw/master/week10_files/growth_data.csv")
+t
+mean_northeast_initialsuman<-mean(as.matrix(t[1:50,3]))
+sd_northeast_initialsuman<-sd(as.matrix(t[1:50,3]))
+mean_northeast_initialsuman
+sd_northeast_initialsuman
+mean_northeast_finalsuman<-mean(as.matrix(t[1:50,6]))
+sd_northeast_finalsuman<-sd(as.matrix(t[1:50,6]))
+mean_northeast_finalsuman
+sd_northeast_finalsuman
+mean_southwest_initialsuman<-mean(as.matrix(t[51:100,3]))
+sd_southwest_initialsuman<-sd(as.matrix(t[51:100,3]))
+mean_southwest_initialsuman
+sd_southwest_initialsuman
+mean_southwest_finalsuman<-mean(as.matrix(t[51:100,6]))    
+sd_southwest_finalsuman<-sd(as.matrix(t[51:100,6]))
+mean_southwest_finalsuman
+sd_southwest_finalsuman
+mean_southwest_initialsuman
+boxplot(t$Circumf_1999_cm[1:50],ylab="North east initialsuman")
+boxplot(t$Circumf_2019_cm[1:50],ylab="North east finalsuman")
+boxplot(t$Circumf_1999_cm[51:100],ylab="South west initialsuman")
+boxplot(t$Circumf_2019_cm[51:100],ylab="South west finalsuman")
