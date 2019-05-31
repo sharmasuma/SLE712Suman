@@ -1,3 +1,4 @@
+download.file("https://github.com/markziemann/SLE712_files/raw/master/week10_files/growth_data.csv" , destfile = "growth_data.csv")
 t<-read.csv("https://github.com/markziemann/SLE712_files/raw/master/week10_files/growth_data.csv")
 t
 mean_northeast_initialsuman<-mean(as.matrix(t[1:50,3]))
